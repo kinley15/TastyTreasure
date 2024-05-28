@@ -1,0 +1,26 @@
+{
+  "name": "tastytreasure",
+  "version": "1.0.0",
+  "description": "REcipe Sharing Website By Kinley Phuntsho",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/kinley15/TastyTreasure.git"
+  },
+  "keywords": [
+    "recipe",
+    "website",
+    "project"
+  ],
+  "author": "Kinley Phuntsho",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "nodemon": "^3.1.1"
+  }
+}
