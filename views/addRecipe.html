@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,3001,700">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/addrecipe.css">
+        <title>Add recipe</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav nav--tours">
+                <a href="/" class="nav__el">Recipes</a>
+            </nav>
+            
+            <nav class="nav nav--user"></nav>
+        </header>
+        <div class="form-container">
+            <div class="form-section">
+                <form class="form">
+                    <div class="form-line">
+                        <label for="recipeName">Recipe Name</label>
+                        <input type="text" id="recipeName" name="recipeName" placeholder="Enter recipe name">
+                    </div>
+                    <div class="form-line">
+                        <label for="dishType">Dish Type</label>
+                        <select id="dishType" name="dishType">
+                            <option value="">Please Select</option>
+                            <option value="Main Dish">Main Dish</option>
+                            <option value="Side Dish">Side Dish</option>
+                            <option value="Appetizer">Appetizer</option>
+                            <option value="Soup">Soup</option>
+                            <option value="Salad">Salad</option>
+                            <option value="Dessert">Dessert</option>
+                            <option value="Drink">Drink</option>
+                        </select>
+                    </div>
+                    <div class="form-line">
+                        <label>Difficulty</label>
+                        <div class="radio-group">
+                            <input type="radio" id="easy" name="difficulty" value="Easy">
+                            <label for="easy">Easy</label>
+                            <input type="radio" id="moderate" name="difficulty" value="Moderate">
+                            <label for="moderate">Moderate</label>
+                            <input type="radio" id="hard" name="difficulty" value="Hard">
+                            <label for="hard">Hard</label>
+                        </div>
+                    </div>
+                    <div class="form-line">
+                        <label for="image">Image</label>
+                        <input type="file" id="image" name="image">
+                    </div>
+                    <div class="form-line">
+                        <label for="ingredients">Ingredients</label>
+                        <textarea id="ingredients" name="ingredients" placeholder="Enter ingredients"></textarea>
+                    </div>
+                    <div class="form-line">
+                        <label for="directions">Directions</label>
+                        <textarea id="directions" name="directions" placeholder="Enter directions"></textarea>
+                    </div>
+                    <div class="form-line">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer__logo">
+                <p>Tasty</p>
+            </div>
+            <p class="footer__copyright">&copy; Tasty</p>
+        </footer>
+        <script type="module" src="js/addRecipe.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    </body>
+</html>

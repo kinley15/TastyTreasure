@@ -1,0 +1,68 @@
+/* Style for form container */
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form sections */
+.form-section {
+    margin-bottom: 20px;
+}
+
+/* Style for form labels */
+.form-line label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style for form inputs */
+.form-line input[type="text"],
+.form-line select,
+.form-line textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Style for radio buttons */
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background-color: #3399ff;
+    color: #fff;
+}
+
+/* Style for submit button */
+.form-line button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #3399ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-line button[type="submit"]:hover {
+    background-color: #2670e6;
+}

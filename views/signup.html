@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,3001,700">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>E-Pharmacist</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav nav--tours">
+            <a href="/" class="nav__el">Recipes</a>
+        </nav>
+        <nav class="nav nav--user"></nav>
+    </header>
+    <content>
+        <main  class="main">
+            <div class="login-form">
+                <h2 class="heading-secondary ma-bt-lg">Create a New Account</h2>
+                <form class="form form--signup">
+                    <div class="form__group">
+                        <label class="form__label" for="name">Name</label>
+                        <input class="form__input" id="name" type="text" placeholder="Tashi Wangyel"
+                        required="required"/>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="email">Email address</label>
+                        <input class="form__input" id="email" type="email" placeholder="you@example.com"
+                        required="required"/>
+                    </div>
+                    <div class="form__group ma-bt-md">
+                        <label class="from__label" for="password">Password</label>
+                        <input class="form__input" id="password" type="password" placeholder=".........."
+                        required="required" minlength="8"/>
+                    </div>
+                    <div class="form__group ma-bt-md">
+                        <label class="from__label" for="password">Confirm Password</label>
+                        <input class="form__input" id="password-confirm" type="password" placeholder=".........."
+                        required="required" minlength="8"/>
+                    </div>
+                    <div class="form__group">
+                        <button class="btn btn--green">Signup</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </content>
+    <footer class="footer">
+        <div class="footer__logo">
+            <p>Tasty</p>
+        </div>
+        <p class="footer__copyright">&copy; Tasty</p>
+    </footer>
+    <script type="module" src="./js/signup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+</body>
+
+</html>

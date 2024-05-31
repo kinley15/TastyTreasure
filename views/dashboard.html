@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,3001,700">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/star.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Tasty</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav nav--tours">
+            <a href="/" class="nav__el">Recipes</a>
+        </nav>
+        
+        <nav class="nav nav--user"></nav>
+    </header>
+    <content class="main">
+        <form class="d-flex ms-auto" style="margin-bottom: 30px;">
+                    <h1 style="position: absolute;
+                    top: 30%;
+                    font-size: 60px;
+                    color: white;">Search Box</h1>
+            <div class="box" style="width: 500px;
+            height: 50px;
+            background-color: white;
+            border-radius: 30px;
+            border-color: black;
+            display: flex;
+            align-items: center;
+            padding: 20px;">
+                <i class="fa-brands fa-searching" style="font-size: 20px;
+                color: #777;"></i>
+                <input class="form-control me-2 content_for_search" type="search" placeholder="Search" aria-label="Search" style="flex: 1;
+height: 40px;
+border: none;
+outline: none;
+font-size: 18px;
+padding-left: 10px;">
+            </div>
+        </form>
+          <div class="card-container">
+              <div class="card">
+                <div class="card__header">
+                  <div class="card__picture">
+                  
+                  </div>
+                  <!-- <h3 class="heading-tertirary">
+                    <span>Recipes</span>
+                  </h3> -->
+                </div>
+      
+                <div class="card__details">
+                      <h4 class="card__sub-heading"></h4>
+                      <p class="card__text"></p>
+                      <div class="card__data">
+                          <svg class="card__icon"></svg>
+                          <i data-star=""></i>
+                      </div>
+          
+                      <div class="card__data">
+                          <svg class="card__icon"></svg>
+                          <span class="publishedBy"></span>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+    </content>
+    <footer class="footer">
+        <div class="footer__logo">
+            <p>Tasty</p>
+        </div>
+        <p class="footer__copyright">&copy; Tasty</p>
+    </footer>
+    <script type="module" src="js/dashboard.js"></script>
+    <script type="module" src="js/filter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+</body>
+
+</html>
