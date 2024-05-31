@@ -27,7 +27,7 @@ const allRecipe = async () =>{
     try{
         const res = await axios({
             method: 'GET',
-            url: 'http://localhost:4001/api/v1/recipes',
+            url: 'https://starfish-app-28zzy.ondigitalocean.app/api/v1/recipes',
         })
         displayRecipes(res.data.data)
     } catch(err){

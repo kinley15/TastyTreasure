@@ -4,7 +4,7 @@ const logout = async () => {
   try {
       const res = await axios({
           method: 'GET',
-          url: 'http://localhost:4001/api/v1/users/logout',
+          url: 'https://starfish-app-28zzy.ondigitalocean.app/api/v1/users/logout',
       })
       if (res.data.status === 'success') {
           location.href="/";
@@ -85,8 +85,8 @@ export const updateSettings = async (data, type) => {
     try {
       const url =
         type === 'password'
-          ? 'http://localhost:4001/api/v1/users/updateMyPassword'
-          : 'http://localhost:4001/api/v1/users/updateMe'
+          ? 'https://starfish-app-28zzy.ondigitalocean.app/api/v1/users/updateMyPassword'
+          : 'https://starfish-app-28zzy.ondigitalocean.app/api/v1/users/updateMe'
       const res = await axios({
         method: 'PATCH',
         url,

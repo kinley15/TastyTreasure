@@ -5,7 +5,7 @@ const login = async(email,password)=>{
     try{
         const res = await axios({
             method:'POST',
-            url:'http://localhost:4001/api/v1/users/login',
+            url:'https://starfish-app-28zzy.ondigitalocean.app/api/v1/users/login',
             data:{
                 email,
                 password,

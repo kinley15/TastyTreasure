@@ -4,7 +4,7 @@ const logout = async () => {
   try {
       const res = await axios({
           method: 'GET',
-          url: 'http://localhost:4001/api/v1/users/logout',
+          url: 'https://starfish-app-28zzy.ondigitalocean.app/api/v1/users/logout',
       })
       if (res.data.status === 'success') {
           location.href="/";
@@ -49,7 +49,7 @@ const allRecipe = async () =>{
   try{
       const res = await axios({
           method: 'GET',
-          url: 'http://localhost:4001/api/v1/recipes',
+          url: 'https://starfish-app-28zzy.ondigitalocean.app/api/v1/recipes',
       })
       displayRecipes(res.data.data)
   } catch(err){
@@ -133,7 +133,7 @@ const displayRecipes = (recipes) => {
 
   const deleteRecipe = async (recipeId) => {
     try {
-        const res = await axios.delete(`http://localhost:4001/api/v1/recipes/${recipeId}`);
+        const res = await axios.delete(`https://starfish-app-28zzy.ondigitalocean.app/api/v1/recipes/${recipeId}`);
         return res.data.data;
     } catch (err) {
         showAlert('error', err);

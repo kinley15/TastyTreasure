@@ -35,7 +35,7 @@ const recipeId = urlParams.get('id');
 
 const getDetailRecipes = async (recipeId) => {
   try {
-    const res = await axios.get(`http://localhost:4001/api/v1/recipes/${recipeId}`);
+    const res = await axios.get(`https://starfish-app-28zzy.ondigitalocean.app/api/v1/recipes/${recipeId}`);
     if (obj._id) {
         const feedbackBack = document.querySelector('.feedback-box');
         const timeline = document.querySelector('.timeline');
@@ -110,7 +110,7 @@ const addComments = async (userId, recipeID, comments) => {
     try {
         const res = await axios({
             method: 'POST',
-            url: 'http://localhost:4001/api/v1/comments/post',
+            url: 'https://starfish-app-28zzy.ondigitalocean.app/api/v1/comments/post',
            data:{
             userId,
             recipeID,
@@ -145,7 +145,7 @@ const getAllComments = async () =>{
     try {
         const res = await axios({
             method: 'GET',
-            url: 'http://localhost:4001/api/v1/comments'
+            url: 'https://starfish-app-28zzy.ondigitalocean.app/api/v1/comments'
         })
         const usercomments = []
         const comments = res.data.data
@@ -200,7 +200,7 @@ const fetchComments = async (comments)=>{
 }
 const getUserDetails = async (userId) => {
     try {
-      const res = await axios.get(`http://localhost:4001/api/v1/users/${userId}`);
+      const res = await axios.get(`https://starfish-app-28zzy.ondigitalocean.app/api/v1/users/${userId}`);
       return res.data.data;
     } catch (err) {
       showAlert('error', 'Failed to fetch user details');
@@ -209,7 +209,7 @@ const getUserDetails = async (userId) => {
 
 const addRating = async (rating)=>{
     try {
-        const res = await axios.post('http://localhost:4001/api/v1/recipes/rate', {
+        const res = await axios.post('https://starfish-app-28zzy.ondigitalocean.app/api/v1/recipes/rate', {
             recipeId,
             rating,
             userId
@@ -281,7 +281,7 @@ $('.click').click(function() {
 
 const addfav = async()=>{
   try {
-    const res = await axios.post('http://localhost:4001/api/v1/users/addfav',{
+    const res = await axios.post('https://starfish-app-28zzy.ondigitalocean.app/api/v1/users/addfav',{
       recipeId,
       userId
     });

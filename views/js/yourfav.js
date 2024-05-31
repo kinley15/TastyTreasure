@@ -4,7 +4,7 @@ const logout = async () => {
   try {
       const res = await axios({
           method: 'GET',
-          url: 'http://localhost:4001/api/v1/users/logout',
+          url: 'https://starfish-app-28zzy.ondigitalocean.app/api/v1/users/logout',
       })
       if (res.data.status === 'success') {
           location.href="/";
@@ -50,7 +50,7 @@ const currentUserId = obj._id; // Assuming you have the current user ID stored i
 // Function to get user details
 const getUserDetails = async (currentUserId) => {
   try {
-      const res = await axios.get(`http://localhost:4001/api/v1/users/${currentUserId}`);
+      const res = await axios.get(`https://starfish-app-28zzy.ondigitalocean.app/api/v1/users/${currentUserId}`);
       return res.data.data;
   } catch (err) {
     showAlert('error', err);
@@ -66,7 +66,7 @@ const getFavoriteRecipes = async (favoriteRecipes) => {
   try {
       const promises = favoriteRecipes.map(async (favorite) => {
           // Send a GET request for each recipe ID
-          const res = await axios.get(`http://localhost:4001/api/v1/recipes/${favorite.recipeId}`);
+          const res = await axios.get(`https://starfish-app-28zzy.ondigitalocean.app/api/v1/recipes/${favorite.recipeId}`);
           return res.data; // Return the response data for each recipe
       });
       

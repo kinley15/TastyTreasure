@@ -37,7 +37,7 @@ const addrecipe = async (userId, publishedBy,recipeName, dishType, difficulty, i
 
         const res = await axios({
             method: 'POST',
-            url: 'http://localhost:4001/api/v1/recipes/post',
+            url: 'https://starfish-app-28zzy.ondigitalocean.app/api/v1/recipes/post',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
