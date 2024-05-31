@@ -14,3 +14,28 @@ $(document).ready(function () {
         });
     });
 });
+
+
+$(document).ready(function () {
+    function filterJobsByLocation() {
+        var checkedLocations = [];
+        $(".check:checked").each(function () {
+            checkedLocations.push($(this).val());
+        });
+
+        $(".card").show();
+
+        if (checkedLocations.length > 0) {
+            $(".card").each(function () {
+                var location = $(this).find(".dish").text().trim();
+                if (!checkedLocations.includes(location)) {
+                    $(this).hide();
+                }
+            });
+        }
+    }
+
+    $(".check").change(function () {
+        filterJobsByLocation();
+    });
+});

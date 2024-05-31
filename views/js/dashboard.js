@@ -46,7 +46,7 @@ const displayRecipes = (recipes) =>{
         var el3 = card.querySelector('.card__text')
         var el4 = card.querySelector('i')
         var el5 = card.querySelector('.publishedBy')
-        
+        var el6 = card.querySelector('.dish')
   
         
        
@@ -61,7 +61,7 @@ const displayRecipes = (recipes) =>{
         el4.dataset.star = element.averageRating;
 
         el5.innerHTML = 'Published By : ' + element.publishedBy
-
+        el6.innerHTML = element.dishType
         // Add event listener to the card for navigation
         card.addEventListener('click', () => {
             // Navigate to detail page passing recipe ID or any other identifier

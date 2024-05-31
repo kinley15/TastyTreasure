@@ -72,3 +72,18 @@
   [data-star^="4.8"]::after{width:96%}
   [data-star^="4.9"]::after{width:98%}
   [data-star^="5"]::after{width:100%}
+
+
+  .dish-types {
+    columns: 4; /* Display the dish types in two columns */
+}
+
+.check {
+    margin-bottom: 5px;
+}
+
+/* Optional: Adjust checkbox styles */
+.check[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+}

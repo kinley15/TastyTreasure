@@ -25,10 +25,6 @@
     </header>
     <content class="main">
         <form class="d-flex ms-auto" style="margin-bottom: 30px;">
-                    <h1 style="position: absolute;
-                    top: 30%;
-                    font-size: 60px;
-                    color: white;">Search Box</h1>
             <div class="box" style="width: 500px;
             height: 50px;
             background-color: white;
@@ -47,6 +43,19 @@ font-size: 18px;
 padding-left: 10px;">
             </div>
         </form>
+        <div class="col-md-6">
+            <h5>Filter by Dish Type</h5>
+            <div class="dish-types">
+                <input type="checkbox" class="check" value="Appetizer"> Appetizer<br>
+                <input type="checkbox" class="check" value="Main Dish"> Main dish<br>
+                <input type="checkbox" class="check" value="Dessert"> Dessert<br>
+                <input type="checkbox" class="check" value="Soup"> soup<br>
+                <input type="checkbox" class="check" value="Side Dish"> Side Dish<br>
+                <input type="checkbox" class="check" value="Salad"> Salad<br>
+                <input type="checkbox" class="check" value="Drink"> Drinks<br>
+
+            </div>
+            </div>
           <div class="card-container">
               <div class="card">
                 <div class="card__header">
@@ -64,6 +73,9 @@ padding-left: 10px;">
                       <div class="card__data">
                           <svg class="card__icon"></svg>
                           <i data-star=""></i>
+                      </div>
+                      <div class="dishType">
+                        <p>Dish Type : <p class="dish"></p></p>
                       </div>
           
                       <div class="card__data">
