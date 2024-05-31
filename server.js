@@ -16,7 +16,7 @@ mongoose.connect(DB).then((con)=>{
 
 // starting the server on port 4001.
 
-const port = 4001
+const port = 8080
 app.listen(port, () => {
     console.log('App running on port 4001...')
 })
